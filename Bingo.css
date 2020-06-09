@@ -1,0 +1,14 @@
+.BingoBox {
+	width: 19%;
+	height: 19%;
+	border-style: solid;
+	border:1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+
+.BingoMark {
+	background: red;
+}
