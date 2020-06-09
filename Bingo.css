@@ -1,14 +1,18 @@
-.BingoBox {
-	width: 19%;
-	height: 19%;
-	border-style: solid;
-	border:1px solid black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	float: left;
+body {
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/playstation-pattern.png);
+	font-family: 'Roboto', sans-serif;
 }
-
-.BingoMark {
-	background: red;
+.BingoBox {
+	height: 9rem;
+}
+.BingoBox p {
+	font-size: .875rem;
+	transition: 250ms font-weight ease;
+}
+.BingoMark::after {
+	content: "X";
+	display: block;
+	position: absolute;
+	font-size: 10rem;
+	color: rgba(255,255,255,.15);
 }

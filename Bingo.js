@@ -10,30 +10,30 @@ function GenerateBoard(arr)
 	
 		
 		// For new Lines
-		if(i % 5 == 0) str += "<p>";
+		if(i % 5 == 0) str += "<div class='row'>";
 		
 		// Add DIV
-		str += '<div class="BingoBox">';
+		str += '<div class="BingoBox col border btn btn-light rounded-0 d-flex align-items-center justify-content-center"><p class="m-0 text-center">';
 		
 		if(i == 12)
 		{
-			str += "Free";
+			str += "Free Space";
 		}
 		else
 		{
 			str += items[i];
 		}
 		
-		str += '</div>';
+		str += '</p></div>';
 		
-		if(i % 5 == 4) str += "</p>";
+		if(i % 5 == 4) str += "</div>";
 		
 	}
 	
 	$("#GameBody").html(str);
 	
 	$(".BingoBox").on("click", function() {
-		$(this).toggleClass("BingoMark")
+		$(this).toggleClass("BingoMark font-weight-bold text-white bg-primary")
 	})
 }
 
