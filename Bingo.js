@@ -58,7 +58,7 @@ function Games()
 		"4K30",
 		"Free to Play",
 		"Studio: Bend Studio",
-		"Studio: Gyerrilla Games",
+		"Studio: Guerrilla Games",
 		"Studio: Insomniac Games",
 		"Studio: Japan Studio",
 		"Studio: London Studio",
